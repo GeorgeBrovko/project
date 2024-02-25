@@ -1,20 +1,54 @@
 .wrapper {
-  width: 1280px;
-  margin: 30px auto;
+  width: 1365px;
+  margin: 50px auto;
 }
 header .logo {
   font-weight: 400;
   font-size: 20px;
+  margin: 50px;
+  color: white;
 }
-header ul.nav {
+.foot {
+  color: white;
+  position: relative;
+  left: 180px;
+  bottom: 75px;
+  color: white;
+  width: 250px;
+  }
+
+.foot .logos {
+  font-size: 25px;
+  color: white;
+}
+
+
+.cont {
+  display: inline;
+  position: relative;
+  right: 450px;
+  bottom: 25px;
   float: right;
+  color: white;
+}
+
+.cont .num {
+  position: relative;
+  bottom: 10px;
+}
+
+header ul.nav {
+  display: inline;
+  float: right;
+  margin: 1px;
   list-style: none;
+  
 }
 
 header ul.nav li {
-    margin: -10px;
+    margin: 5px;
     cursor: pointer;
-    transition: opacity 500ms ease;
+    width: 100px;
 }
 
 header ul.nav li:hover {
@@ -30,53 +64,891 @@ header .presentation {
   background-position: center;
 }
 
+.categories div {
+  display: inline-block;
+  border-radius: 50px;
+  padding: 10px 20px;
+  margin-bottom: 25px;
+  margin-right: 15px;
+  cursor: pointer;
+  color: #CFCFCF;
+}
+
 main {
   display: flex;
   width: 100%;
   flex-wrap: wrap;
+  margin-bottom: 200px;
   justify-content: space-between;
+  color: #CFCFCF;
+  
 }
 
 main .item {
-    width: 20%;
+    width: 330px;
     margin-bottom: 50px;
-    background: #f5f5f5;
+    background: #494544;
     overflow: hidden;
     position: relative;
     padding-bottom: 20px;
+    border-radius: 10px
 }
 
 main .item img {
     width: 100%;
     border-radius: 10px 10px 0 0;
-    transition: transform 500ms ease ;
 }
 
-main h2, main b, main p {
-    margin: 10px 20px;
-    color: #333;
+main h2 {
+    margin: 15px 20px;
+    color: white;
+    font-size: 21px;
+}
+
+main b {
+    margin: 15px 20px;
+    font-size: 20px;
+    color: white;
+}
+
+main p {
+    margin: 15px 20px;
+    font-size: 16px;
+    color: #CFCFCF;
 }
 
 main h3 {
     position: absolute;
-    font-size: 15px;
-    right: 20px;
-    bottom: 30px;
-    width: 70px;
-    height: 88px;
+    font-size: 13px;
+    right: 7px;
+    bottom: 25px;
+    width: 60px;
+    height: 85px;
+}
+
+.info {
+  position: absolute;
+  right: 77px;
+  font-size: 16px;
+  width: 140px;
+  bottom: 110px;
 }
 
 main .add-to-cart {
   position: absolute;
-  right: 15px;
-  bottom: 15px;
-  background: mediumseagreen;
-  width: 90px;
-  height: 35px;
+  right: 4px;
+  bottom: 10px;
+  background: #618967;
+  width: 120px;
+  height: 40px;
   text-align: center;
   line-height: 35px;
   color: white;
-  border-radius: 5%;
+  border-radius: 10px;
   cursor: pointer; 
 } 
 
+main h1 {
+  position: absolute;
+  left: 500px;
+  font-size: 25px;
+  bottom: 100px;
+  height: 700px;
+}
+
+.mask {
+  position: relative;
+  bottom: 200px;
+}
+
+.mask::after {
+  content: 'НАШЕ КАФЕ';
+  position: absolute;
+  top: 90px;
+  left: 80px;
+  width: 300px;
+  font-size: 30px;
+  font-weight: 100;
+  color: #FFFFFF;
+}
+
+.mask::before {
+  content: 'Мы расположены в одном из самых живописных мест города — на берегу реки, это ваш оазис в черте города, куда можно сбежать от шумного и пыльного мегаполиса. Мы, действительно уникальные, ведь все продумано до мелочей: проект построен из дикого закарпатского сруба, камин в основном зале ресторана и панорамные окна с видом на реку, уютные беседки на берегу реки и лучшая видовая террасса, шатер с посадкой на 200 человек, сказочный детский домик и бассейн.';
+  position: absolute;
+  top: 160px;
+  left: 80px;
+  width: 540px;
+  font-size: 22px;
+  color: #CFCFCF;
+}
+
+.mask2 {
+  position: relative;
+  bottom: 30px;
+  width: 100%;
+}
+
+/* img {
+  width: 100%;
+} */
+
+.mask2::before {
+  content: url('./img/Group 22.png');
+  position: absolute;
+  top: 365px;
+  right: 255px;
+}
+
+.rectangle {
+  position: absolute;
+  bottom: 100px;
+  left: 35px;
+  height: 500px;
+}
+
+.rectangle::after {
+  content: 'КОНТАКТЫ';
+  position: absolute;
+  top: 95px;
+  left: 110px;
+  width: 540px;
+  font-size: 27px;
+  color: white;  
+}
+
+.rect {
+  position: absolute;
+  top: 130px;
+  left: 150px;
+  width: 540px;
+  font-size: 16px;
+  color: #CFCFCF;  
+}
+
+.rect::before {
+  content: 'МО, городской округ Красногорск, село Ильинкое, Экспериментальная улица, 10';
+  position: absolute;
+  top: 25px;
+  font-size: 17px;
+  color: white;  
+}
+
+.rect2 {
+  position: absolute;
+  top: 215px;
+  left: 150px;
+  font-size: 16px;
+  color: #CFCFCF;  
+}
+
+.rect2::before {
+  content: 'auto.wash@gmail.com';
+  position: absolute;
+  top: 25px;
+  font-size: 17px;
+  color: white;  
+}
+
+.rect3 {
+  position: absolute;
+  top: 310px;
+  left: 370px;
+  font-size: 21px;
+  color: white;
+}
+
+
+.rect3::before {
+  content: 'Звоните или оставляйте заявку';
+  position: absolute;
+  top: 30px;
+  width: 200px;
+  font-size: 12px;
+  color: #CFCFCF;  
+}
+
+main .cartItem {
+  position: absolute;
+  top: 250px;
+  left: 400px;
+  width: 800px;
+  background: white;
+  z-index: 1000;
+  padding: 20px;
+  padding-bottom: 0;
+} 
+
+main .cartItem .item {
+  width: 100%;
+  float: left;
+  margin-bottom: 20px;
+}
+
+main .cartItem .item img {
+  width: 130px;
+  float: left;
+  margin-right: 20px;
+  padding: 20px;
+}
+
+main .cartItem .item h2 {
+  font-size: 20px;
+  margin-bottom: 10px;
+  color: white;
+}
+
+.but {
+  color: white;
+  right: 60px;
+  text-align: center;
+  border: none;
+  border-radius: 50%;
+  width: 27px;
+  height: 30px;
+  background-color: #72A479;
+}
+
+main .cartItem .item b {
+  width: 150px;
+  font-weight: 600;
+  float: right;
+  height: 40px;
+}
+
+main .cartItem .item p {
+  font-size: 13px;
+  margin: -6px 1px;
+  float: left;
+  width: 250px;
+}
+
+footer .action {
+  cursor: pointer; 
+}
+
+main .act {
+  position: absolute;
+  display: flex;
+  width: 95%;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 20px;
+  
+}
+
+main .act .item {
+  position: relative;
+  width: 30%;
+}
+
+main .act .item img {
+  width: 100%;
+  cursor: pointer;
+  margin: -25px 1px;
+
+}
+
+main .add-in-cart {
+  position: absolute;
+  right: 45px;
+  width: 170px;
+  height: 40px;
+  top: 25px;
+  border-radius: 7px;
+  line-height: 37px;
+  text-align: center;
+  background: #618967;
+}
+.order {
+  margin: 150px 510px;
+  line-height: 35px;
+}
+
+.full-item {
+  position: absolute;
+  width: 55%;
+  margin: 75px 110px;
+  background: #494544;
+  height: 300px;
+  padding: 30px;
+  border-radius: 10px;
+}
+
+.full-item img {
+  position: absolute;
+  width: 515px;
+  color: white;
+  float: left;
+  left: 0px;
+  bottom: 0px;
+}
+
+.full-item h2 {
+  position: absolute;
+  top: 20px;
+  left: 550px;
+  width: 300px;
+  color: white;
+  font-weight: 100;
+}
+
+.full-item p {
+  position: absolute;
+  top: 60px;
+  left: 550px;
+  width: 300px;
+  font-size: 15px;
+  color: #CFCFCF;
+}
+
+.full-item h3 {
+  position: absolute;
+  top: 120px;
+  left: 550px;
+  width: 300px;
+  font-size: 15px;
+  color: white;
+}
+
+.full-item .Bel {
+  position: absolute;
+  top: 280px;
+  left: 570px;
+  font-size: 12px;
+  color: white;
+}
+
+.full-item .Bel::after {
+  content: '17.23';
+  position: absolute;
+  top: 25px;
+  left: 0px;
+  font-size: 13px;
+  color: white;
+}
+
+.full-item .Jir {
+  position: absolute;
+  top: 280px;
+  left: 650px;
+  font-size: 12px;
+  color: white;
+}
+
+.full-item .Jir::after {
+  content: '7.63';
+  position: absolute;
+  top: 25px;
+  left: 0px;
+  font-size: 13px;
+  color: white;
+}
+
+.full-item .Ugl {
+  position: absolute;
+  top: 280px;
+  left: 730px;
+  font-size: 12px;
+  color: white;
+}
+
+.full-item .Ugl::after {
+  content: '22.35';
+  position: absolute;
+  top: 25px;
+  left: 0px;
+  font-size: 13px;
+  color: white;
+}
+
+.full-item .Kl {
+  position: absolute;
+  top: 280px;
+  left: 830px;
+  font-size: 12px;
+  color: white;
+}
+
+.full-item .Kl::after {
+  content: '234';
+  position: absolute;
+  top: 25px;
+  left: 0px;
+  font-size: 13px;
+  color: white;
+}
+
+@media (max-width: 992px) {
+  .wrapper {
+    width: 1350px;
+    margin: 50px auto;
+  }
+  
+  header .logo {
+    position: relative;
+    font-weight: 400;
+    left: 430px;
+    font-size: 20px;
+    margin: 20px;
+    color: white;
+}
+.foot {
+  color: white;
+  position: relative;
+  left: 600px;
+  top: 40px;
+}
+
+.foot .logos {
+  position: relative;
+  bottom: 50px;
+  font-size: 30px;
+  color: white;
+  width: 20px;
+}
+
+.foot .foot_1 {
+  position: relative;
+  width: 200px;
+  bottom: 20px;
+  font-size: 13px;
+  right: 15px;
+}
+
+.foot .foot_2 {
+  position: relative;
+  width: 300px;
+  bottom: 20px;
+  right: 45px;
+}
+
+.foot .ac {
+  position: relative;
+  left: 20px;
+  bottom: 10px;
+}
+
+.cont {
+  display: none;
+}
+
+
+header ul.nav {
+  display: inline;
+  float: left;
+  list-style: none;
+  
+}
+
+header ul.nav li {
+    position: relative;
+    left: 700px;
+    bottom: 5px;
+    cursor: pointer;
+    
+}
+
+header ul.nav li:hover {
+  opacity: 0.5;
+}
+
+header .presentation {
+  margin: 120px 0;
+  background: url('./img/bm.jpeg');
+  width: 1320px;
+  height: 450px;
+  background-size: cover;
+}
+
+.categories div {
+  position: relative;
+  display: inline-block;
+  border-radius: 50px;
+  bottom: 80px;
+  left: 420px;
+  cursor: pointer;
+  color: #CFCFCF;
+  
+}
+
+main {
+  display: flex;
+  width: 100%;
+  flex-wrap: wrap;
+  margin-bottom: 20px;
+  justify-content: space-between;
+  color: #CFCFCF;
+  
+}
+
+main .item {
+    width: 330px;
+    margin-bottom: 50px;
+    background: #494544;
+    overflow: hidden;
+    position: relative;
+    padding-bottom: 20px;
+    border-radius: 10px
+}
+
+main .item img {
+    width: 100%;
+    border-radius: 10px 10px 0 0;
+}
+
+main h2 {
+    margin: 15px 20px;
+    color: white;
+    font-size: 21px;
+}
+
+main b {
+    margin: 15px 20px;
+    font-size: 20px;
+    color: white;
+}
+
+main p {
+    margin: 15px 20px;
+    font-size: 16px;
+    color: #CFCFCF;
+}
+
+main h3 {
+    position: absolute;
+    font-size: 13px;
+    right: 7px;
+    bottom: 25px;
+    width: 60px;
+    height: 85px;
+}
+
+.info {
+  position: absolute;
+  right: 77px;
+  font-size: 16px;
+  width: 140px;
+  bottom: 110px;
+}
+
+main .add-to-cart {
+  position: absolute;
+  right: 4px;
+  bottom: 10px;
+  background: #618967;
+  width: 120px;
+  height: 40px;
+  text-align: center;
+  line-height: 35px;
+  color: white;
+  border-radius: 10px;
+  cursor: pointer; 
+} 
+
+main h1 {
+  position: absolute;
+  left: 500px;
+  font-size: 25px;
+  bottom: 100px;
+  height: 700px;
+}
+
+.mask {
+  display: none;
+}
+
+.mask2 {
+  position: relative;
+  top: 20px;
+}
+
+.img {
+  width: 100%;
+}
+
+.mask2::before {
+  content: url('./img/Group 22.png');
+  position: absolute;
+  top: 365px;
+  right: 255px;
+}
+
+.rectangle {
+  position: absolute;
+  bottom: 180px;
+  left: 330px;
+}
+
+.rectangle::after {
+  content: 'КОНТАКТЫ';
+  position: absolute;
+  top: 95px;
+  left: 230px;
+  width: 540px;
+  font-size: 27px;
+  color: white;  
+}
+
+.rect {
+  position: absolute;
+  top: 130px;
+  left: 90px;
+  width: 540px;
+  font-size: 20px;
+  color: #CFCFCF;  
+}
+
+.rect::before {
+  content: 'МО, городской округ Красногорск, село Ильинкое, Экспериментальная улица, 10';
+  position: absolute;
+  top: 25px;
+  font-size: 21px;
+  color: white;  
+}
+
+.rect2 {
+  position: absolute;
+  top: 215px;
+  left: 90px;
+  font-size: 20px;
+  color: #CFCFCF;  
+}
+
+.rect2::before {
+  content: 'auto.wash@gmail.com';
+  position: absolute;
+  top: 25px;
+  font-size: 22px;
+  color: white;  
+}
+
+.rect3 {
+  position: absolute;
+  top: 310px;
+  left: 370px;
+  font-size: 27px;
+  color: white;
+}
+
+
+.rect3::before {
+  content: 'Звоните или оставляйте заявку';
+  position: absolute;
+  top: 30px;
+  width: 200px;
+  font-size: 14px;
+  color: #CFCFCF;  
+}
+main .cartItem {
+  position: absolute;
+  top: 320px;
+  left: 20px;
+  width: 500px;
+  background: white;
+  z-index: 1000;
+  padding: 20px;
+  padding-bottom: 0;
+}
+
+main .h1 {
+  position: absolute;
+  left: 50px;
+  top: 200px;
+}
+
+main .h4 {
+  position: absolute;
+  left: 50px;
+  width: 170px;
+  top: 15px;
+} 
+
+main .add-in-cart {
+  position: absolute;
+  left: 200px;
+  width: 210px;
+  height: 45px;
+  border-radius: 7px;
+  line-height: 37px;
+  background: #618967;
+}
+
+main .cartItem .item {
+  width: 100%;
+  float: left;
+  margin-bottom: 20px;
+}
+
+main .cartItem .item img {
+  width: 150px;
+  margin-top: 20px;
+}
+
+main .cartItem .item h2 {
+  font-size: 20px;
+  margin-top: 60px;
+  color: white;
+}
+
+.but {
+  color: white;
+  right: 80px;
+  margin-top: 15px;
+  text-align: center;
+  border: none;
+  border-radius: 50%;
+  width: 20px;
+  height: 20px;
+  background-color: #72A479;
+}
+
+main .cartItem .item b {
+  width: 100px;
+  font-weight: 600;
+  margin-top: 10px;
+  height: 40px;
+}
+
+main .cartItem .item p {
+  display: none;
+}
+
+footer .action {
+  cursor: pointer; 
+}
+
+main .act {
+  position: absolute;
+  width: 510px;
+  padding: 20px;
+  
+}
+
+main .act .item {
+  position: relative;
+  width: 100%;
+}
+
+main .act .item img {
+  width: 100%;
+  cursor: pointer;
+}
+
+.order {
+  margin: 100px 50px;
+  position: absolute;
+  width: 350px;
+}
+
+.full-item {
+  position: absolute;
+  width: 150px;
+  left: 10px;
+  padding: 100px;
+  background: #494544;
+}
+
+.full-item img {
+  position: absolute;
+  width: 350px;
+  color: white;
+  float: left;
+  left: 0px;
+  bottom: 255px;
+}
+
+.full-item h2 {
+  position: absolute;
+  top: 250px;
+  left: 140px;
+  color: white;
+  font-weight: 100;
+  font-size: 20px;
+}
+
+.full-item p {
+  position: absolute;
+  top: 290px;
+  left: 30px;
+  text-align: center;
+  font-size: 12px;
+  color: #CFCFCF;
+}
+
+.full-item h3 {
+  position: absolute;
+  top: 335px;
+  left: 145px;
+  width: 300px;
+  font-size: 14px;
+  color: white;
+}
+
+.full-item .Bel {
+  position: absolute;
+  top: 420px;
+  left: -100px;
+  font-size: 13px;
+  color: white;
+}
+
+.full-item .Bel::after {
+  content: '17.23';
+  position: absolute;
+  top: 25px;
+  left: 135px;
+  font-size: 11px;
+  color: white;
+}
+
+.full-item .Jir {
+  position: absolute;
+  top: 420px;
+  left: -35px;
+  font-size: 13px;
+  color: white;
+}
+
+.full-item .Jir::after {
+  content: '7.63';
+  position: absolute;
+  top: 25px;
+  left: 135px;
+  font-size: 11px;
+  color: white;
+}
+
+.full-item .Ugl {
+  position: absolute;
+  top: 420px;
+  left: 40px;
+  font-size: 13px;
+  color: white;
+}
+
+.full-item .Ugl::after {
+  content: '22.35';
+  position: absolute;
+  top: 25px;
+  left: 125px;
+  font-size: 11px;
+  color: white;
+}
+
+.full-item .Kl {
+  position: absolute;
+  top: 420px;
+  left: 115px;
+  font-size: 13px;
+  color: white;
+}
+
+.full-item .Kl::after {
+  content: '234';
+  position: absolute;
+  top: 25px;
+  left: 137px;
+  font-size: 13px;
+  color: white;
+}
+}
